@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/ll_ssid_password"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:text="        wifi名："
+            android:textColor="@color/black"
+            android:textSize="40px"/>
+
+        <EditText
+            android:id="@+id/et_ssid"
+            android:layout_width="300px"
+            android:layout_height="70px"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_ssid_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_ssid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="    wifi密码："
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+        <EditText
+            android:id="@+id/et_ssid_password"
+            android:layout_width="300px"
+            android:layout_height="70px"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_set_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="设置"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_mqtt_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/ll_mqtt_port"
+        android:layout_below="@id/ll_ssid_password"
+        android:layout_marginTop="80px"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:text="    MQTT网关："
+            android:textColor="@color/black"
+            android:textSize="40px"/>
+
+        <EditText
+            android:id="@+id/et_mqtt_server"
+            android:layout_width="300px"
+            android:layout_height="70px"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_mqtt_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_mqtt_server"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="    MQTT端口："
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+        <EditText
+            android:id="@+id/et_mqtt_port"
+            android:layout_width="300px"
+            android:layout_height="70px"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_set_mqtt_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="设置"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_mqtt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/ll_ssid_password"
+        android:layout_below="@id/ll_mqtt_port"
+        android:layout_marginTop="80px"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:text="  MQTT用户："
+            android:textColor="@color/black"
+            android:textSize="40px"/>
+
+        <EditText
+            android:id="@+id/et_mqtt_user"
+            android:layout_width="300px"
+            android:layout_height="70px"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_mqtt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_mqtt_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="    MQTT密码："
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+        <EditText
+            android:id="@+id/et_mqtt_password"
+            android:layout_width="300px"
+            android:layout_height="70px"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_set_mqtt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="设置"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+       android:layout_marginBottom="100px"
+
+        >
+        <Button
+            android:id="@+id/btn_find_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询clientId"
+            />
+        <Button
+            android:id="@+id/btn_find_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_find_client"
+            android:layout_marginLeft="80px"
+            android:text="查询网络信息"
+            />
+    </RelativeLayout>
+</RelativeLayout>
